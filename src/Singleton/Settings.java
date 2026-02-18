@@ -1,2 +1,20 @@
-package Singleton;public class Settings {
+package Singleton;
+
+import java.io.Serializable;
+
+public class Settings implements Serializable {
+
+
+
+    private  Settings() {}
+    private static class SettingsHolder{
+
+        private static final Settings INSTANCE = new Settings();
+    }
+    public static  Settings getInstance(){
+            return SettingsHolder.INSTANCE;
+    }
+    public Object readResolve(){
+        return getInstance();
+    }
 }
