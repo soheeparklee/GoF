@@ -1,4 +1,4 @@
-package factory;
+package creational.factory;
 
 public interface ShipFactory {
     default Ship orderShip(String name, String email){

@@ -1,4 +1,4 @@
-package Singleton;
+package creational.Singleton;
 
 public class RuntimeExample {
     public static void main(String[] args) {

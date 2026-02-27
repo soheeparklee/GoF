@@ -1,4 +1,4 @@
-package Singleton;
+package creational.Singleton;
 
 public enum Setting {
     INSTANCE
